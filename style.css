@@ -1,20 +1,91 @@
-h1, h2, h3, h4, h5,h6 {
+h1, h2, h3, h4, h5 {
     font-family: 'Merriweather',
     serif;
 }
-h2 {
-    font-size: 44px;
-}
-p, a {
+
+p, a, h6 {
     font-family: 'Poppins',
     sans-serif;
+}
+p {
+    font-size: 15px;
+    color: #242424;
+    line-height: 26px;    
+    letter-spacing: 0px;
+    padding-bottom: 50px;
+}
+h2 {
+    font-size: 44px;
+    color: #222223;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    padding-bottom: 50px;
+}
+h3 {
+    font-size: 30px;
+    color: #222223;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    padding-bottom: 15px;
+}
+h6 {
+    text-transform: uppercase;
+    color: #20c05c;
+    font-size: 13px;
+    padding-bottom: 15px;
+        line-height: 25px;
+        font-weight: 600;
+        letter-spacing: 2px;
+}
+button {    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px 15px 0;
+    cursor: pointer;
+    /* transition: color .1s ease-in-out,
+    background-color .1s ease-in-out,
+    border-color .1s ease-in-out; */
+}
+
+a.green-btn button {
+    background-color: #20c05c;
+    color: #ffffff;
+}
+a.gray-btn button {
+    background-color: #f7f7f7;
+    color: #747474;
+}
+a.green-btn button:hover {
+    background-color: #f7f7f7;
+    color: #747474;
+}
+
+a.gray-btn button:hover {
+    background-color: #20c05c;
+    color: #ffffff;
+}
+header {
+    top: 0;
+    position: sticky;
 }
 .header-header {
     height: auto;
     background-color: #1e1d26;
+    
+}
+.main-black {
+height: auto;
+background-color: #000000;
+}
+.main-gray {
+    height: auto;
+    background-color: #f0eff4;
 }
 .logo {
-    text-align: center;
+    text-align: left;
 }
 .logo img {
     margin: 15px 0;
@@ -34,15 +105,141 @@ p, a {
     color:#ffffff;
 }
 .main-menu li {
-    padding: 0 15px;
-    margin: 15px 0;
+    padding: 30px;
+
 }
-.b-i {
+.background-image-top {
     background-position: center top;
     background-image: url(images/image-1.jpg);
-    background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-repeat: no-repeat;   
     padding-top: 140px;
     padding-bottom: 120px;
     
+}
+.background-image-top-black {
+    background-position: center top;
+    background-image: url(images/image-4.jpg);
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    padding-bottom: 120px;
+
+}
+
+.background-image-bottom {
+    background-position: center bottom;
+    background-image: url(images/image-2.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    padding-top: 0px;
+    padding-bottom: 110px;
+}
+.background-image-bottom-lightgray {
+    background-position: center bottom;
+    background-image: url(images/image-5.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    padding-top: 100px;
+    padding-bottom: 360px;
+}
+.open-book-icon {
+    width: 15px;
+    height: 15px;
+    background-image: url(images/icon-open-book.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+.to-see-more {
+    text-align: right;
+    padding-top: 30px;
+}
+.no-underline {
+    text-decoration: none;
+}
+.show-all, .read-more {
+    color: #20c05c;    
+}
+.show-all:hover,
+.read-more:hover {
+    text-decoration:underline;
+}
+.recipe-image img {
+    width: 100%;
+    height: auto;
+}
+.other-recipes {
+    background-image: url(images/image-3.jpg);
+    margin-top: 25px;
+    padding: 90px 80px 75px;
+    border-radius: 10px;
+}
+.white {
+    color: #ffffff;
+}
+.centered {
+    text-align: center;
+}
+.hidden {
+    display: none;    
+}
+.color-light-gray {
+    color: #a8a8a8;
+}
+.recipe-information {
+    padding: 20px 20px 0px;
+}
+.like-count p, .recipe-post-date p {
+    font-size: 15px;
+    color: #a8a8a8;    
+    padding-bottom: 15px;
+}
+.recipe-category a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #20c05c;
+    font-size: 13px;
+    padding-bottom: 15px;    
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.recipe-category a:hover {
+    text-decoration: underline;
+}
+.recipe-title {
+    padding-bottom: 15px;
+}
+.recipe-title a {
+    text-decoration: none;
+    font-family: 'Merriweather',
+    serif;
+    font-size: 19px;
+    color: #222223;    
+    font-weight: 700;
+    letter-spacing: 0px;
+    
+}
+.recipe-title a:hover {
+    color: #20c05c;
+}
+.recipe-description p {
+    padding-bottom: 15px;
+}
+.recipe-footer {
+    position: relative;
+    margin: 20px -20px 25px; 
+    padding: 15px 15px;
+    height: 50px;
+    background: rgba(0, 0, 0, .02);
+}
+.like-count {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+.read-more-block {
+    position: absolute;
+    line-height: 20px;
+    border-left: 1px solid rgba(0, 0, 0, .08);
+    padding: 5px 10px;    
+    top: 10px;
+    right: 15px;
 }
